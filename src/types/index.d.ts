@@ -6,15 +6,17 @@ declare interface HighlightSlide {
 }
 
 declare interface Model {
-  id: number;
+  id?: number;
   title: string;
   color: string[];
   img: string;
 }
 
+declare type SizeValue = 'small' | 'large';
+
 declare interface Size {
   label: string;
-  value: string;
+  value: SizeValue;
 }
 
 declare interface CarouselVideo {
@@ -23,4 +25,16 @@ declare interface CarouselVideo {
   videoId: number;
   isLastVideo: boolean;
   isPlaying: boolean;
+}
+
+// Props
+
+declare interface ModelViewProps {
+  index: number;
+  groupRef: RefObject<Group>;
+  gsapType: string;
+  controlRef: RefObject<OrbitControls>;
+  setRotationState: Dispatch<SetStateAction<boolean>>;
+  item: Model;
+  size: SizeValue;
 }
