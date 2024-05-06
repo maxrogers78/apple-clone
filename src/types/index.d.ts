@@ -16,3 +16,11 @@ declare interface Size {
   label: string;
   value: string;
 }
+
+declare interface CarouselVideo {
+  isEnd: boolean;
+  startPlay: boolean;
+  videoId: number;
+  isLastVideo: boolean;
+  isPlaying: boolean;
+}
