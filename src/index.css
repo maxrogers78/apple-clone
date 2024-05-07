@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: white;
   width: 100dvw;
@@ -39,7 +43,7 @@ canvas {
   }
 
   .btn {
-    @apply bg-blue hover:text-blue hover:border-blue my-5 rounded-3xl border border-transparent px-5 py-2 hover:border hover:bg-transparent;
+    @apply my-5 rounded-3xl border border-transparent bg-blue px-5 py-2 hover:border hover:border-blue hover:bg-transparent hover:text-blue;
   }
 
   .color-container {
@@ -59,11 +63,11 @@ canvas {
   }
 
   .section-heading {
-    @apply text-gray mb-5 translate-y-20 text-3xl font-medium opacity-0 md:text-5xl lg:mb-0 lg:text-6xl;
+    @apply mb-5 translate-y-20 text-3xl font-medium text-gray opacity-0 md:text-5xl lg:mb-0 lg:text-6xl;
   }
 
   .feature-text {
-    @apply text-gray max-w-md translate-y-[100px] text-lg font-semibold opacity-0 md:text-xl;
+    @apply max-w-md translate-y-[100px] text-lg font-semibold text-gray opacity-0 md:text-xl;
   }
 
   .feature-text-container {
@@ -79,7 +83,7 @@ canvas {
   }
 
   .link {
-    @apply text-blue flex translate-y-20 cursor-pointer items-center text-xl opacity-0 hover:underline;
+    @apply flex translate-y-20 cursor-pointer items-center text-xl text-blue opacity-0 hover:underline;
   }
 
   .control-btn {
@@ -95,7 +99,7 @@ canvas {
   }
 
   .hiw-subtitle {
-    @apply text-gray py-10 text-center text-xl font-semibold md:text-2xl;
+    @apply py-10 text-center text-xl font-semibold text-gray md:text-2xl;
   }
 
   .hiw-video {
@@ -107,7 +111,7 @@ canvas {
   }
 
   .hiw-text {
-    @apply text-gray text-xl font-normal md:font-semibold;
+    @apply text-xl font-normal text-gray md:font-semibold;
   }
 
   .hiw-bigtext {

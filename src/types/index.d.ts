@@ -38,3 +38,12 @@ declare interface ModelViewProps {
   item: Model;
   size: SizeValue;
 }
+
+declare interface animateWithGsapTimelineProps {
+  timeline: gsap.core.Timeline;
+  model: MutableRefObject<THREE.Group<THREE.Object3DEventMap>>;
+  rotation: number;
+  firstTarget: string;
+  secondTarget: string;
+  animation: gsap.TweenVars;
+}
