@@ -39,11 +39,17 @@ declare interface ModelViewProps {
   size: SizeValue;
 }
 
+declare interface animateWithGsapProps {
+  target: string;
+  animations?: gsap.TweenVars;
+  scroll?: ScrollTrigger.Vars;
+}
+
 declare interface animateWithGsapTimelineProps {
   timeline: gsap.core.Timeline;
   model: MutableRefObject<THREE.Group<THREE.Object3DEventMap>>;
   rotation: number;
   firstTarget: string;
   secondTarget: string;
-  animation: gsap.TweenVars;
+  animations: gsap.TweenVars;
 }

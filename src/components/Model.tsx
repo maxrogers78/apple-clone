@@ -41,7 +41,7 @@ const Model = () => {
         rotation: smallRotation,
         firstTarget: '#view1',
         secondTarget: '#view2',
-        animation: {
+        animations: {
           transform: 'translateX(-100%)',
           duration: 2,
         },
@@ -55,7 +55,7 @@ const Model = () => {
         rotation: largeRotation,
         firstTarget: '#view2',
         secondTarget: '#view1',
-        animation: {
+        animations: {
           transform: 'translateX(0)',
           duration: 2,
         },
